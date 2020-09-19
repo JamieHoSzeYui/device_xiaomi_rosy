@@ -39,6 +39,11 @@ BUILD_BROKEN_USES_BUILD_COPY_HEADERS := true
 
 TARGET_BOARD_SUFFIX := _64
 
+PRODUCT_SOONG_NAMESPACES += \
+    hardware/qcom/audio \
+    hardware/qcom/display \
+    hardware/qcom/media
+
 # Kernel
 BOARD_KERNEL_BASE := 0x80000000
 BOARD_KERNEL_CMDLINE := androidboot.hardware=qcom msm_rtb.filter=0x237 ehci-hcd.park=3 lpm_levels.sleep_disabled=1 androidboot.usbconfigfs=false androidboot.bootdevice=7824900.sdhci earlycon=msm_hsl_uart,0x78af000 loop.max_part=7
